@@ -19,6 +19,7 @@ public class basics extends firstProject{
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
 		
+		/* Waitting per seconds */
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		
 		driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
