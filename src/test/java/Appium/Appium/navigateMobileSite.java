@@ -12,8 +12,7 @@ public class navigateMobileSite extends firstProjectChrome {
 		
 		driver.get("https://www.facebook.com");
 		driver.findElementById("m_login_email").sendKeys("ehabo_91@hotmail.com");
-		driver.findElementById("m_login_password").sendKeys("0799122071EHABO");
+		driver.findElementById("m_login_password").sendKeys("123123123");
 		driver.findElementByXPath("//button[@name = 'login']").click();
-		
 	}
 }
