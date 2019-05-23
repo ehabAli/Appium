@@ -18,20 +18,19 @@ public class firstProject {
 		
 		File f = new File("src");
 		//File fs = new File(f, "ApiDemos-debug.apk");
-		File fs = new File(f, "Splash.apk");
+		//File fs = new File(f, "Splash.apk");
+		File fs = new File(f, "WebView Test_v1.1.5_apkpure.com.apk");
+		
 		
 		
 		AndroidDriver<AndroidElement> driver;
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
-//		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+        //cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		return driver;
 	}
-	
-
-	
 }

@@ -35,8 +35,6 @@ public class DragDrop extends firstProject {
 		
 		//t.longPress(longPressOptions().withElement(element(first))).moveTo(element(seconf)).release().perform();
 		t.longPress(element(first)).moveTo(element(seconf)).release().perform();
-
-
 	}
 
 }
