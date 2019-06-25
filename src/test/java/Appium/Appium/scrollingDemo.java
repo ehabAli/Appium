@@ -19,8 +19,7 @@ public class scrollingDemo extends firstProject{
 		viewButton.click();
 //		driver.findElementByAndroidUIAutomator("new UIScrollable(new Uiselector()).scrollIntoView(text(\"WebView\"));");
 		
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));");
-		
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));");	
 	}
 
 }

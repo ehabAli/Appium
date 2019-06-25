@@ -37,6 +37,10 @@ public class swipeDemo extends firstProject {
 		t.longPress(longPressOptions().withElement(element(first)).withDuration(ofSeconds(2)))
 		.moveTo(element(second)).release().perform();
 		
+		driver.navigate().back();
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		
+		
 
 	}
 
