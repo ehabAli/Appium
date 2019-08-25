@@ -17,9 +17,10 @@ public class firstProject {
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
 		
 		File f = new File("src");
-		File fs = new File(f, "ApiDemos-debug.apk");
+//		File fs = new File(f, "ApiDemos-debug.apk");
 		//File fs = new File(f, "Splash.apk");
 		//File fs = new File(f, "WebView Test_v1.1.5_apkpure.com.apk");
+		File fs = new File(f, "General-Store.apk");
 		
 		
 		
