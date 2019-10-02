@@ -28,8 +28,11 @@ public class firstProject {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
+		
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
 		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+        cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+        cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10);
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		

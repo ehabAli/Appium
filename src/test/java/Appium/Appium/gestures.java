@@ -10,7 +10,7 @@ import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import test.dependsongroup.SecondSampleTest;
+
 
 import static java.time.Duration.ofSeconds;
 import static io.appium.java_client.touch.offset.ElementOption.element;
