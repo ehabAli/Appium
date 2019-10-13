@@ -22,14 +22,17 @@ public class Ecommerce extends firstProject{
 		
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		
-		//driver.findElementById("com.androidsample.generalstore:id/nameField").sendKeys("hello");
-		//driver.findElementByXPath("//*[@text='Female']").click();
+		driver.findElementById("com.androidsample.generalstore:id/nameField").sendKeys("hello");
+		driver.findElementByXPath("//*[@text='Female']").click();
+		
+		//expand drop down list
 		driver.findElementById("android:id/text1").click();
+		
 		//scroll down and click on specific option
 		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));");
 		driver.findElementByXPath("//*[@text='Argentina']").click();
 		
-		// click in submit button
+		// click on submit button
 		driver.findElementById("com.androidsample.generalstore:id/btnLetsShop").click();
 		
 		//handle toast message

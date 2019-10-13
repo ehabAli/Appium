@@ -31,8 +31,12 @@ public class firstProject {
 		
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
 		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+        
+        //you should define ATOMATION_NAME capability for Android 6 and above
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+        //below capability is to define the duration per second for appium to wait until element is showing
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10);
+        
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		
