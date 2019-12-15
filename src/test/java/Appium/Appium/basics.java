@@ -29,6 +29,7 @@ public class basics extends firstProject{
 		driver.findElementsByClassName("android.widget.Button").get(1).click();
 		
 		// nothing else to add to this class
+		// another comment to add
 		
 	}
 }
