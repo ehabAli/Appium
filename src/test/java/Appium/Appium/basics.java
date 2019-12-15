@@ -28,5 +28,7 @@ public class basics extends firstProject{
 		driver.findElementById("android:id/edit").sendKeys("hello");
 		driver.findElementsByClassName("android.widget.Button").get(1).click();
 		
+		// nothing else to add to this class
+		
 	}
 }
